@@ -1,0 +1,90 @@
+/* Phase titles */
+"phase.focus" = "專注";
+"phase.shortBreak" = "短休息";
+"phase.longBreak" = "長休息";
+
+/* Notification titles */
+"notification.focusEnded" = "專注時間結束";
+"notification.breakEnded" = "休息時間結束";
+
+/* Notification body */
+"notification.focusBody" = "該休息了，下一階段是%@。";
+"notification.breakBody" = "準備重新投入專注。";
+
+/* Settings */
+"settings.timing" = "計時";
+"settings.shortBreak" = "短休息";
+"settings.longBreak" = "長休息";
+"settings.longBreakInterval" = "長休息間隔";
+"settings.longBreakIntervalDesc" = "每 %ld 個番茄";
+"settings.behavior" = "行為";
+"settings.autoStart" = "階段結束後自動開始下一輪";
+"settings.notifications" = "啟用系統通知";
+"settings.sound" = "啟用提示音";
+"settings.floatingPanel" = "顯示懸浮窗";
+
+/* Menu */
+"menu.tagline" = "把專注當作一件有趣的事";
+"menu.focus" = "專注";
+"menu.stats" = "統計";
+"menu.tags" = "標籤";
+"menu.settings" = "設置";
+
+/* Stats */
+"stats.todayPomodoros" = "今日番茄";
+"stats.completedSessions" = "完成輪次";
+"stats.todayFocus" = "今日專注";
+"stats.effectiveDuration" = "有效時長";
+"stats.longestStreak" = "最長連續";
+"stats.streakMaintenance" = "狀態保持";
+"stats.last14Days" = "近 14 天專注圖";
+"stats.date" = "日期";
+"stats.minutes" = "分鐘";
+"stats.trend30" = "30 天趨勢";
+"stats.heatmap" = "熱力圖";
+"stats.tagBreakdown" = "標籤佔比";
+
+/* Tags */
+"tags.list" = "標籤列表";
+"tags.new" = "新建標籤";
+"tags.edit" = "編輯標籤";
+"tags.create" = "創建標籤";
+"tags.saveChanges" = "保存修改";
+"tags.placeholder" = "例如：構思、會議、深度編碼";
+"tags.focusDuration" = "專注時長";
+"tags.cancel" = "取消";
+"tags.editAction" = "編輯";
+"tags.delete" = "刪除";
+
+/* Accessibility */
+"a11y.reset" = "重置";
+"a11y.pause" = "暫停";
+"a11y.start" = "開始";
+"a11y.skipPhase" = "跳過到下一階段";
+"a11y.completedPomodoros" = "已完成 %ld 個番茄";
+"a11y.cycleStage" = "當前週期第 %ld 段，共 %ld 段";
+"a11y.hidePanel" = "隱藏懸浮窗";
+
+/* Default tag names */
+"tag.default.focus" = "專注";
+"tag.default.review" = "複盤";
+"tag.default.writing" = "寫作";
+"tag.default.reading" = "閱讀";
+"tag.default.design" = "設計";
+"tag.default.coding" = "編碼";
+
+/* About */
+"settings.about" = "關於";
+"settings.version" = "版本";
+"settings.developer" = "開發者";
+
+/* Language */
+"settings.language" = "語言";
+"settings.other" = "其它";
+"settings.languageSystem" = "跟隨系統";
+"settings.languageRestartHint" = "重新啟動應用後生效";
+"settings.restartNow" = "立即重新啟動";
+
+/* Units */
+"unit.min" = "分鐘";
+"unit.days" = "天";

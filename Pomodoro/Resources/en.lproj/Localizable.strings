@@ -1,0 +1,90 @@
+/* Phase titles */
+"phase.focus" = "Focus";
+"phase.shortBreak" = "Short Break";
+"phase.longBreak" = "Long Break";
+
+/* Notification titles */
+"notification.focusEnded" = "Focus Time Ended";
+"notification.breakEnded" = "Break Time Ended";
+
+/* Notification body */
+"notification.focusBody" = "Time to rest, next: %@.";
+"notification.breakBody" = "Ready to focus again.";
+
+/* Settings */
+"settings.timing" = "Timing";
+"settings.shortBreak" = "Short Break";
+"settings.longBreak" = "Long Break";
+"settings.longBreakInterval" = "Long Break Interval";
+"settings.longBreakIntervalDesc" = "Every %ld pomodoros";
+"settings.behavior" = "Behavior";
+"settings.autoStart" = "Auto-start next phase";
+"settings.notifications" = "Enable Notifications";
+"settings.sound" = "Enable Sound";
+"settings.floatingPanel" = "Show Floating Panel";
+
+/* Menu */
+"menu.tagline" = "Make focus a fun thing";
+"menu.focus" = "Focus";
+"menu.stats" = "Stats";
+"menu.tags" = "Tags";
+"menu.settings" = "Settings";
+
+/* Stats */
+"stats.todayPomodoros" = "Today's Pomodoros";
+"stats.completedSessions" = "Completed Sessions";
+"stats.todayFocus" = "Today's Focus";
+"stats.effectiveDuration" = "Effective Duration";
+"stats.longestStreak" = "Longest Streak";
+"stats.streakMaintenance" = "Streak Maintenance";
+"stats.last14Days" = "Last 14 Days";
+"stats.date" = "Date";
+"stats.minutes" = "Minutes";
+"stats.trend30" = "30-Day Trend";
+"stats.heatmap" = "Heatmap";
+"stats.tagBreakdown" = "Tag Breakdown";
+
+/* Tags */
+"tags.list" = "Tag List";
+"tags.new" = "New Tag";
+"tags.edit" = "Edit Tag";
+"tags.create" = "Create Tag";
+"tags.saveChanges" = "Save Changes";
+"tags.placeholder" = "e.g., Brainstorm, Meeting, Coding";
+"tags.focusDuration" = "Focus Duration";
+"tags.cancel" = "Cancel";
+"tags.editAction" = "Edit";
+"tags.delete" = "Delete";
+
+/* Accessibility */
+"a11y.reset" = "Reset";
+"a11y.pause" = "Pause";
+"a11y.start" = "Start";
+"a11y.skipPhase" = "Skip to next phase";
+"a11y.completedPomodoros" = "Completed %ld pomodoros";
+"a11y.cycleStage" = "Cycle stage %ld of %ld";
+"a11y.hidePanel" = "Hide floating panel";
+
+/* Default tag names */
+"tag.default.focus" = "Focus";
+"tag.default.review" = "Review";
+"tag.default.writing" = "Writing";
+"tag.default.reading" = "Reading";
+"tag.default.design" = "Design";
+"tag.default.coding" = "Coding";
+
+/* About */
+"settings.about" = "About";
+"settings.version" = "Version";
+"settings.developer" = "Developer";
+
+/* Language */
+"settings.language" = "Language";
+"settings.other" = "Other";
+"settings.languageSystem" = "System Default";
+"settings.languageRestartHint" = "Restart the app to apply the new language";
+"settings.restartNow" = "Restart Now";
+
+/* Units */
+"unit.min" = "min";
+"unit.days" = "days";

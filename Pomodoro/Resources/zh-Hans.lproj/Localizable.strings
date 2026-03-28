@@ -1,0 +1,90 @@
+/* Phase titles */
+"phase.focus" = "专注";
+"phase.shortBreak" = "短休息";
+"phase.longBreak" = "长休息";
+
+/* Notification titles */
+"notification.focusEnded" = "专注时间结束";
+"notification.breakEnded" = "休息时间结束";
+
+/* Notification body */
+"notification.focusBody" = "该休息了，下一阶段是%@。";
+"notification.breakBody" = "准备重新投入专注。";
+
+/* Settings */
+"settings.timing" = "计时";
+"settings.shortBreak" = "短休息";
+"settings.longBreak" = "长休息";
+"settings.longBreakInterval" = "长休息间隔";
+"settings.longBreakIntervalDesc" = "每 %ld 个番茄";
+"settings.behavior" = "行为";
+"settings.autoStart" = "阶段结束后自动开始下一轮";
+"settings.notifications" = "启用系统通知";
+"settings.sound" = "启用提示音";
+"settings.floatingPanel" = "显示悬浮窗";
+
+/* Menu */
+"menu.tagline" = "把专注当作一件有趣的事";
+"menu.focus" = "专注";
+"menu.stats" = "统计";
+"menu.tags" = "标签";
+"menu.settings" = "设置";
+
+/* Stats */
+"stats.todayPomodoros" = "今日番茄";
+"stats.completedSessions" = "完成轮次";
+"stats.todayFocus" = "今日专注";
+"stats.effectiveDuration" = "有效时长";
+"stats.longestStreak" = "最长连续";
+"stats.streakMaintenance" = "状态保持";
+"stats.last14Days" = "近 14 天专注图";
+"stats.date" = "日期";
+"stats.minutes" = "分钟";
+"stats.trend30" = "30 天趋势";
+"stats.heatmap" = "热力图";
+"stats.tagBreakdown" = "标签占比";
+
+/* Tags */
+"tags.list" = "标签列表";
+"tags.new" = "新建标签";
+"tags.edit" = "编辑标签";
+"tags.create" = "创建标签";
+"tags.saveChanges" = "保存修改";
+"tags.placeholder" = "例如：构思、会议、深度编码";
+"tags.focusDuration" = "专注时长";
+"tags.cancel" = "取消";
+"tags.editAction" = "编辑";
+"tags.delete" = "删除";
+
+/* Accessibility */
+"a11y.reset" = "重置";
+"a11y.pause" = "暂停";
+"a11y.start" = "开始";
+"a11y.skipPhase" = "跳过到下一阶段";
+"a11y.completedPomodoros" = "已完成 %ld 个番茄";
+"a11y.cycleStage" = "当前周期第 %ld 段，共 %ld 段";
+"a11y.hidePanel" = "隐藏悬浮窗";
+
+/* Default tag names */
+"tag.default.focus" = "专注";
+"tag.default.review" = "复盘";
+"tag.default.writing" = "写作";
+"tag.default.reading" = "阅读";
+"tag.default.design" = "设计";
+"tag.default.coding" = "编码";
+
+/* About */
+"settings.about" = "关于";
+"settings.version" = "版本";
+"settings.developer" = "开发者";
+
+/* Language */
+"settings.language" = "语言";
+"settings.other" = "其它";
+"settings.languageSystem" = "跟随系统";
+"settings.languageRestartHint" = "重启应用后生效";
+"settings.restartNow" = "立即重启";
+
+/* Units */
+"unit.min" = "分钟";
+"unit.days" = "天";

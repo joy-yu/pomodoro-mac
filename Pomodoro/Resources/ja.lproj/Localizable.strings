@@ -1,0 +1,90 @@
+/* Phase titles */
+"phase.focus" = "集中";
+"phase.shortBreak" = "短い休憩";
+"phase.longBreak" = "長い休憩";
+
+/* Notification titles */
+"notification.focusEnded" = "集中時間終了";
+"notification.breakEnded" = "休憩時間終了";
+
+/* Notification body */
+"notification.focusBody" = "休憩の時間です。次: %@。";
+"notification.breakBody" = "再び集中しましょう。";
+
+/* Settings */
+"settings.timing" = "タイマー";
+"settings.shortBreak" = "短い休憩";
+"settings.longBreak" = "長い休憩";
+"settings.longBreakInterval" = "長い休憩間隔";
+"settings.longBreakIntervalDesc" = "%ld ポモドーロごと";
+"settings.behavior" = "動作";
+"settings.autoStart" = "次のフェーズを自動開始";
+"settings.notifications" = "通知を有効にする";
+"settings.sound" = "サウンドを有効にする";
+"settings.floatingPanel" = "フローティングパネルを表示";
+
+/* Menu */
+"menu.tagline" = "集中を楽しいことにしよう";
+"menu.focus" = "集中";
+"menu.stats" = "統計";
+"menu.tags" = "タグ";
+"menu.settings" = "設定";
+
+/* Stats */
+"stats.todayPomodoros" = "ポモドーロ";
+"stats.completedSessions" = "完了数";
+"stats.todayFocus" = "今日の集中";
+"stats.effectiveDuration" = "有効時間";
+"stats.longestStreak" = "最長連続";
+"stats.streakMaintenance" = "連続維持";
+"stats.last14Days" = "過去 14 日間";
+"stats.date" = "日付";
+"stats.minutes" = "分";
+"stats.trend30" = "30 日間の傾向";
+"stats.heatmap" = "ヒートマップ";
+"stats.tagBreakdown" = "タグ内訳";
+
+/* Tags */
+"tags.list" = "タグリスト";
+"tags.new" = "新しいタグ";
+"tags.edit" = "タグを編集";
+"tags.create" = "タグを作成";
+"tags.saveChanges" = "変更を保存";
+"tags.placeholder" = "例：アイデア、会議、コーディング";
+"tags.focusDuration" = "集中時間";
+"tags.cancel" = "キャンセル";
+"tags.editAction" = "編集";
+"tags.delete" = "削除";
+
+/* Accessibility */
+"a11y.reset" = "リセット";
+"a11y.pause" = "一時停止";
+"a11y.start" = "開始";
+"a11y.skipPhase" = "次のフェーズへスキップ";
+"a11y.completedPomodoros" = "%ld ポモドーロ完了";
+"a11y.cycleStage" = "現在のサイクル %ld/%ld";
+"a11y.hidePanel" = "フローティングパネルを非表示";
+
+/* Default tag names */
+"tag.default.focus" = "集中";
+"tag.default.review" = "振り返り";
+"tag.default.writing" = "ライティング";
+"tag.default.reading" = "読書";
+"tag.default.design" = "デザイン";
+"tag.default.coding" = "コーディング";
+
+/* About */
+"settings.about" = "について";
+"settings.version" = "バージョン";
+"settings.developer" = "開発者";
+
+/* Language */
+"settings.language" = "言語";
+"settings.other" = "その他";
+"settings.languageSystem" = "システムに従う";
+"settings.languageRestartHint" = "変更を適用するにはアプリを再起動してください";
+"settings.restartNow" = "今すぐ再起動";
+
+/* Units */
+"unit.min" = "分";
+"unit.days" = "日";

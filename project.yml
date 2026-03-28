@@ -1,0 +1,53 @@
+name: Pomodoro
+options:
+  minimumXcodeGenVersion: 2.38.0
+  developmentLanguage: en
+  knownRegions:
+    - en
+    - zh-Hans
+    - zh-Hant
+    - ja
+    - Base
+settings:
+  base:
+    PRODUCT_NAME: Pomodoro
+    PRODUCT_BUNDLE_IDENTIFIER: com.joyyu.pomodoro
+    MACOSX_DEPLOYMENT_TARGET: 14.0
+    SWIFT_VERSION: 5.9
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: 1.0.0
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_CFBundleDisplayName: Pomodoro
+    INFOPLIST_KEY_LSUIElement: YES
+    INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.productivity
+    INFOPLIST_KEY_NSUserNotificationUsageDescription: Pomodoro uses notifications to alert you when focus and break sessions end.
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_HARDENED_RUNTIME: YES
+targets:
+  Pomodoro:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: Pomodoro
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.joyyu.pomodoro
+        INFOPLIST_KEY_NSHumanReadableCopyright: "© 2026 joy-yu"
+        CODE_SIGN_ENTITLEMENTS: Pomodoro/Pomodoro.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    dependencies:
+      - sdk: SwiftUI.framework
+      - sdk: AppKit.framework
+      - sdk: UserNotifications.framework
+      - sdk: Charts.framework
+      - sdk: SwiftData.framework
+schemes:
+  Pomodoro:
+    build:
+      targets:
+        Pomodoro: all
+    run:
+      config: Debug
+    archive:
+      config: Release
