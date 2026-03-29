@@ -24,6 +24,7 @@ enum MenuSection: String, CaseIterable, Identifiable {
 
 struct MenuBarView: View {
     @Binding var selectedSection: MenuSection
+    @State private var tagEditorMode: TagEditorMode?
 
     let settings: AppSettings
     let floatingPanelManager: FloatingPanelManager
@@ -56,9 +57,20 @@ struct MenuBarView: View {
                 case .stats:
                     StatsView(store: store)
                 case .tags:
-                    TagManagementView(store: store, onSelectTag: { engine.selectTag($0) }, selectedTag: engine.selectedTag)
+                    TagManagementView(
+                        store: store,
+                        onSelectTag: { engine.selectTag($0) },
+                        onPresentCreate: presentTagCreate,
+                        onPresentEdit: presentTagEdit,
+                        selectedTag: engine.selectedTag
+                    )
                 case .settings:
                     SettingsView(settings: settings)
+                }
+            }
+            .overlay {
+                if selectedSection == .tags, let mode = tagEditorMode {
+                    TagEditorSheet(mode: mode, store: store, onDismiss: { tagEditorMode = nil })
                 }
             }
         }
@@ -76,6 +88,14 @@ struct MenuBarView: View {
         }
     }
 
+
+    private func presentTagCreate() {
+        tagEditorMode = .create
+    }
+
+    private func presentTagEdit(_ tag: Tag) {
+        tagEditorMode = .edit(tag)
+    }
 
     private func sectionShell<Content: View>(for section: MenuSection, @ViewBuilder content: () -> Content) -> some View {
         Group {

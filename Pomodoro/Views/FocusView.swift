@@ -60,7 +60,7 @@ struct FocusView: View {
             .padding(.horizontal, 14)
             .padding(.vertical, 10)
             .background(
-                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                RoundedRectangle(cornerRadius: AppTheme.Radius.pill, style: .continuous)
                     .fill(AppTheme.ring.opacity(0.86))
             )
 

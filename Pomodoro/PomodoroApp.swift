@@ -48,6 +48,7 @@ struct PomodoroApp: App {
             )
             .frame(width: 400, height: 640)
             .modelContainer(store.container)
+            .colorScheme(.light)
         } label: {
             Label("\(engine.menuBarTitle)", systemImage: engine.currentPhase.symbolName)
                 .labelStyle(.titleAndIcon)

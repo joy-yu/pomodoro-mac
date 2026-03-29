@@ -45,8 +45,22 @@ enum AppTheme {
         Color(hex: hex)
     }
 
-    enum Animation {
-        static let knobPress      = SwiftUI.Animation.spring(duration: 0.22, bounce: 0.2)
+    /// Semantic corner-radius scale.
+    /// Use these instead of inline literals to keep radii consistent across the app.
+    enum Radius {
+        /// Micro elements: heatmap cells, tiny chips.
+        static let micro:   CGFloat = 4
+        /// Tooltip bubbles.
+        static let tooltip: CGFloat = 8
+        /// Info-bar pills and compact pill rows.
+        static let pill:    CGFloat = 16
+        /// Standard card radius: tag rows, summary cards, chart panels, editor card.
+        static let card:    CGFloat = 20
+        /// Main section container (.paperPanel) and overlay scrim.
+        static let panel:   CGFloat = 28
+    }
+
+    enum Animation {        static let knobPress      = SwiftUI.Animation.spring(duration: 0.22, bounce: 0.2)
         static let knobHover      = SwiftUI.Animation.spring(duration: 0.24, bounce: 0.18)
         static let facePress      = SwiftUI.Animation.spring(duration: 0.22, bounce: 0.16)
         static let progressRing   = SwiftUI.Animation.spring(duration: 0.5,  bounce: 0.16)
@@ -84,7 +98,7 @@ struct PaperPanelModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .background(
-                RoundedRectangle(cornerRadius: 28, style: .continuous)
+                RoundedRectangle(cornerRadius: AppTheme.Radius.panel, style: .continuous)
                     .fill(
                         LinearGradient(
                             colors: [AppTheme.paper, AppTheme.paper.opacity(0.96)],
@@ -93,7 +107,7 @@ struct PaperPanelModifier: ViewModifier {
                         )
                     )
                     .overlay(
-                        RoundedRectangle(cornerRadius: 28, style: .continuous)
+                        RoundedRectangle(cornerRadius: AppTheme.Radius.panel, style: .continuous)
                             .stroke(.white.opacity(0.72), lineWidth: 1)
                     )
             )

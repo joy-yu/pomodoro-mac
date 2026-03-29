@@ -32,6 +32,7 @@ struct FloatingPanelView: View {
         .padding(.horizontal, 16)
         .padding(.vertical, 18)
         .background(Color.clear)
+        .colorScheme(.light)
         .highPriorityGesture(
             DragGesture(minimumDistance: 4, coordinateSpace: .global)
                 .onChanged { _ in

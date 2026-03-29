@@ -31,12 +31,12 @@
 "menu.settings" = "Settings";
 
 /* Stats */
-"stats.todayPomodoros" = "Today's Pomodoros";
-"stats.completedSessions" = "Completed Sessions";
+"stats.todayPomodoros" = "Today's Pomos";
+"stats.completedSessions" = "Sessions Done";
 "stats.todayFocus" = "Today's Focus";
 "stats.effectiveDuration" = "Effective Duration";
 "stats.longestStreak" = "Longest Streak";
-"stats.streakMaintenance" = "Streak Maintenance";
+"stats.streakMaintenance" = "Consecutive Days";
 "stats.last14Days" = "Last 14 Days";
 "stats.date" = "Date";
 "stats.minutes" = "Minutes";

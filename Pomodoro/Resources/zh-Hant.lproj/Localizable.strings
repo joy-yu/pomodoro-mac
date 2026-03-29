@@ -28,7 +28,7 @@
 "menu.focus" = "專注";
 "menu.stats" = "統計";
 "menu.tags" = "標籤";
-"menu.settings" = "設置";
+"menu.settings" = "設定";
 
 /* Stats */
 "stats.todayPomodoros" = "今日番茄";
@@ -36,7 +36,7 @@
 "stats.todayFocus" = "今日專注";
 "stats.effectiveDuration" = "有效時長";
 "stats.longestStreak" = "最長連續";
-"stats.streakMaintenance" = "狀態保持";
+"stats.streakMaintenance" = "連續天數";
 "stats.last14Days" = "近 14 天專注圖";
 "stats.date" = "日期";
 "stats.minutes" = "分鐘";
@@ -49,7 +49,7 @@
 "tags.new" = "新建標籤";
 "tags.edit" = "編輯標籤";
 "tags.create" = "創建標籤";
-"tags.saveChanges" = "保存修改";
+"tags.saveChanges" = "儲存修改";
 "tags.placeholder" = "例如：構思、會議、深度編碼";
 "tags.focusDuration" = "專注時長";
 "tags.cancel" = "取消";
@@ -80,7 +80,7 @@
 
 /* Language */
 "settings.language" = "語言";
-"settings.other" = "其它";
+"settings.other" = "其他";
 "settings.languageSystem" = "跟隨系統";
 "settings.languageRestartHint" = "重新啟動應用後生效";
 "settings.restartNow" = "立即重新啟動";

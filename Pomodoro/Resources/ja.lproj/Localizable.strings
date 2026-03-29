@@ -31,12 +31,12 @@
 "menu.settings" = "設定";
 
 /* Stats */
-"stats.todayPomodoros" = "ポモドーロ";
+"stats.todayPomodoros" = "今日の回数";
 "stats.completedSessions" = "完了数";
 "stats.todayFocus" = "今日の集中";
 "stats.effectiveDuration" = "有効時間";
 "stats.longestStreak" = "最長連続";
-"stats.streakMaintenance" = "連続維持";
+"stats.streakMaintenance" = "連続日数";
 "stats.last14Days" = "過去 14 日間";
 "stats.date" = "日付";
 "stats.minutes" = "分";
@@ -74,7 +74,7 @@
 "tag.default.coding" = "コーディング";
 
 /* About */
-"settings.about" = "について";
+"settings.about" = "アプリについて";
 "settings.version" = "バージョン";
 "settings.developer" = "開発者";
 

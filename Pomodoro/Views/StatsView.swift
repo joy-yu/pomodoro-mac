@@ -60,24 +60,30 @@ struct StatsView: View {
             Text(title)
                 .font(.system(size: 12, weight: .medium, design: .rounded))
                 .foregroundStyle(AppTheme.muted)
-            HStack(alignment: .lastTextBaseline, spacing: 3) {
+                .lineLimit(1)
+                .minimumScaleFactor(0.6)
+            HStack(alignment: .lastTextBaseline, spacing: 2) {
                 Text(number)
-                    .font(.system(size: 22, weight: .bold, design: .rounded))
+                    .font(.system(size: 20, weight: .bold, design: .rounded))
                     .foregroundStyle(AppTheme.ink)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.6)
                 if let unit {
                     Text(unit)
-                        .font(.system(size: 13, weight: .medium, design: .rounded))
+                        .font(.system(size: 12, weight: .medium, design: .rounded))
                         .foregroundStyle(AppTheme.ink)
                 }
             }
             Text(subtitle)
                 .font(.system(size: 11, weight: .medium, design: .rounded))
                 .foregroundStyle(AppTheme.muted)
+                .lineLimit(1)
+                .minimumScaleFactor(0.6)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(14)
         .background(
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
+            RoundedRectangle(cornerRadius: AppTheme.Radius.card, style: .continuous)
                 .fill(AppTheme.ring.opacity(0.85))
         )
     }
@@ -136,7 +142,7 @@ private struct DailyChartView: View {
             .frame(height: 160)
         }
         .padding(16)
-        .background(RoundedRectangle(cornerRadius: 22, style: .continuous).fill(AppTheme.ring.opacity(0.85)))
+        .background(RoundedRectangle(cornerRadius: AppTheme.Radius.card, style: .continuous).fill(AppTheme.ring.opacity(0.85)))
     }
 }
 
@@ -202,7 +208,7 @@ private struct TrendChartView: View {
             .frame(height: 180)
         }
         .padding(16)
-        .background(RoundedRectangle(cornerRadius: 22, style: .continuous).fill(AppTheme.ring.opacity(0.85)))
+        .background(RoundedRectangle(cornerRadius: AppTheme.Radius.card, style: .continuous).fill(AppTheme.ring.opacity(0.85)))
     }
 }
 
@@ -230,7 +236,7 @@ private struct HeatmapView: View {
             }
             LazyVGrid(columns: Array(repeating: GridItem(.fixed(14), spacing: 6), count: columns), spacing: 6) {
                 ForEach(data) { entry in
-                    RoundedRectangle(cornerRadius: 4, style: .continuous)
+                    RoundedRectangle(cornerRadius: AppTheme.Radius.micro, style: .continuous)
                         .fill(heatColor(for: entry.minutes))
                         .frame(width: 14, height: 14)
                         .scaleEffect(hoveredItem?.id == entry.id ? 1.4 : 1.0)
@@ -242,7 +248,7 @@ private struct HeatmapView: View {
             }
         }
         .padding(16)
-        .background(RoundedRectangle(cornerRadius: 22, style: .continuous).fill(AppTheme.ring.opacity(0.85)))
+        .background(RoundedRectangle(cornerRadius: AppTheme.Radius.card, style: .continuous).fill(AppTheme.ring.opacity(0.85)))
     }
 
     private func heatColor(for minutes: Int) -> Color {
@@ -335,7 +341,7 @@ private struct TagChartView: View {
             }
         }
         .padding(16)
-        .background(RoundedRectangle(cornerRadius: 22, style: .continuous).fill(AppTheme.ring.opacity(0.85)))
+        .background(RoundedRectangle(cornerRadius: AppTheme.Radius.card, style: .continuous).fill(AppTheme.ring.opacity(0.85)))
     }
 }
 
@@ -348,7 +354,7 @@ private func chartTooltip(_ date: Date, minutes: Int) -> some View {
         .padding(.horizontal, 8)
         .padding(.vertical, 5)
         .background(
-            RoundedRectangle(cornerRadius: 7, style: .continuous)
+            RoundedRectangle(cornerRadius: AppTheme.Radius.tooltip, style: .continuous)
                 .fill(AppTheme.ink.opacity(0.82))
         )
 }

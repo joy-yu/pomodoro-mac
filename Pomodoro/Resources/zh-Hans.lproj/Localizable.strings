@@ -36,7 +36,7 @@
 "stats.todayFocus" = "今日专注";
 "stats.effectiveDuration" = "有效时长";
 "stats.longestStreak" = "最长连续";
-"stats.streakMaintenance" = "状态保持";
+"stats.streakMaintenance" = "连续天数";
 "stats.last14Days" = "近 14 天专注图";
 "stats.date" = "日期";
 "stats.minutes" = "分钟";
@@ -80,7 +80,7 @@
 
 /* Language */
 "settings.language" = "语言";
-"settings.other" = "其它";
+"settings.other" = "其他";
 "settings.languageSystem" = "跟随系统";
 "settings.languageRestartHint" = "重启应用后生效";
 "settings.restartNow" = "立即重启";

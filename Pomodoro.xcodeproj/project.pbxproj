@@ -11,6 +11,7 @@
 		13105DDE28169E3675489F69 /* FloatingPanelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF621B8689682DE523F4A9C3 /* FloatingPanelManager.swift */; };
 		17522B78D5E1DE1F8B12F90A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A90C75B3587F8CA1C078028D /* Localizable.strings */; };
 		25BC269F4F189E06AF3E7459 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021152B848965138BFA6379 /* MenuBarView.swift */; };
+		32683FD87BF1EF3655472C70 /* TagEditorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCC2131F6B6D2DE211B8F2F /* TagEditorSheet.swift */; };
 		3769EE1E388574E497B74D9B /* FloatingPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382F3D41FD8B7125C05E6A6D /* FloatingPanelView.swift */; };
 		3C28082610F73CB3FDDE3295 /* TimerFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77126C32E61D28F9852CBFB2 /* TimerFaceView.swift */; };
 		451AC1ABE0FE7BCB735693A4 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0A28A454EC499D31F922F5 /* NotificationManager.swift */; };
@@ -66,6 +67,7 @@
 		D8785B22511B5176427253AA /* TimerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEngine.swift; sourceTree = "<group>"; };
 		D9ED9C775526184DFB58F333 /* PomodoroPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroPhase.swift; sourceTree = "<group>"; };
 		EC0A28A454EC499D31F922F5 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		EDCC2131F6B6D2DE211B8F2F /* TagEditorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagEditorSheet.swift; sourceTree = "<group>"; };
 		FBCAE2D3EA667586258E0ACB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FEDB6F679EDD0D9B9455ADB4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FF0963DDCC282026C3D90D91 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				3021152B848965138BFA6379 /* MenuBarView.swift */,
 				9AAB1DFB44BEA94C764EBDB2 /* SettingsView.swift */,
 				37381671A153838D503EE9C5 /* StatsView.swift */,
+				EDCC2131F6B6D2DE211B8F2F /* TagEditorSheet.swift */,
 				D7A29DA84739FA9BEC68F16D /* TagManagementView.swift */,
 				77126C32E61D28F9852CBFB2 /* TimerFaceView.swift */,
 			);
@@ -285,6 +288,7 @@
 				49D54B0231FAEDCE4FC5295F /* SettingsView.swift in Sources */,
 				4E8939235A35A280A7559A03 /* StatsView.swift in Sources */,
 				74351A5769A361568A1BB996 /* Tag.swift in Sources */,
+				32683FD87BF1EF3655472C70 /* TagEditorSheet.swift in Sources */,
 				FB3C50C7B23212DB2BD9D4C5 /* TagManagementView.swift in Sources */,
 				AFD1CBFC9D58D4D77BD3BD59 /* TimerEngine.swift in Sources */,
 				3C28082610F73CB3FDDE3295 /* TimerFaceView.swift in Sources */,
