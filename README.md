@@ -5,7 +5,8 @@ A minimal, distraction-free Pomodoro timer that lives in your menu bar.
 <img src="Pomodoro/Resources/Assets.xcassets/AppIcon.appiconset/app_icon_1024x1024.png" width="200" style="border-radius:40px" />
 
 
----
+## Preview
+<img src=".github/preview.png" width="200" />
 
 ## Features
 
