@@ -25,6 +25,7 @@
 
 /* Menu */
 "menu.tagline" = "集中を楽しいことにしよう";
+"menu.quit" = "Pomodoro を終了";
 "menu.focus" = "集中";
 "menu.stats" = "統計";
 "menu.tags" = "タグ";

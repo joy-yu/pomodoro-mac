@@ -25,6 +25,7 @@
 
 /* Menu */
 "menu.tagline" = "把專注當作一件有趣的事";
+"menu.quit" = "退出 Pomodoro";
 "menu.focus" = "專注";
 "menu.stats" = "統計";
 "menu.tags" = "標籤";

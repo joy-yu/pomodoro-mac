@@ -30,7 +30,6 @@
 		D22ACB039CD9DA70729091BA /* PomodoroPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED9C775526184DFB58F333 /* PomodoroPhase.swift */; };
 		DE120EA386CE6D896625BBAD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C492BE2EA2DB44675BD2C10 /* SwiftUI.framework */; };
 		E0FC4C40FF44D22D650F893F /* PomodoroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89720243547C2AC7DE9E92D8 /* PomodoroApp.swift */; };
-		E1F4638A38FA9B3B211E83FA /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 33E7A5CEA8D822EC2C9119CD /* AppIcon.png */; };
 		E2D6A7ADF9D425B39907A4D7 /* PomodoroSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DB22C40309590D64E78C97 /* PomodoroSession.swift */; };
 		F8D13542322986F40C875E88 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE23F1EDA6C347A15684C4E /* UserNotifications.framework */; };
 		FB3C50C7B23212DB2BD9D4C5 /* TagManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A29DA84739FA9BEC68F16D /* TagManagementView.swift */; };
@@ -42,7 +41,6 @@
 		1745B8A7137F6A9112DB560E /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		2C492BE2EA2DB44675BD2C10 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		3021152B848965138BFA6379 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
-		33E7A5CEA8D822EC2C9119CD /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		3453276387C0ADF788A036B9 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		37381671A153838D503EE9C5 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		382F3D41FD8B7125C05E6A6D /* FloatingPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanelView.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 		367C590702581491DE32CA07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				33E7A5CEA8D822EC2C9119CD /* AppIcon.png */,
 				3A8E42A96BB0B74331951B42 /* Assets.xcassets */,
 				0D4E6F8222D36E1CAAFEF6D8 /* InfoPlist.strings */,
 				A90C75B3587F8CA1C078028D /* Localizable.strings */,
@@ -260,7 +257,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F4638A38FA9B3B211E83FA /* AppIcon.png in Resources */,
 				8890354FB9F750C263D73726 /* Assets.xcassets in Resources */,
 				CA91C1B0F28ACF1A524F543D /* InfoPlist.strings in Resources */,
 				17522B78D5E1DE1F8B12F90A /* Localizable.strings in Resources */,

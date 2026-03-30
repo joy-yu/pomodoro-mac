@@ -155,7 +155,6 @@ final class TimerEngine {
         } else if let defaultTag = store.fetchTag(id: Tag.defaultID) {
             selectTag(defaultTag)
         }
-        completedPomodoros = store.focusSessions().count
     }
 
     private func handleSystemSleep() {

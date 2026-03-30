@@ -34,14 +34,25 @@ struct MenuBarView: View {
     var body: some View {
         VStack(spacing: 16) {
             VStack(alignment: .leading, spacing: 2) {
-                Text("Pomodoro")
-                    .font(.system(size: 26, weight: .bold, design: .rounded))
-                    .foregroundStyle(AppTheme.ink)
+                HStack(alignment: .center) {
+                    Text("Pomodoro")
+                        .font(.system(size: 26, weight: .bold, design: .rounded))
+                        .foregroundStyle(AppTheme.ink)
+                    Spacer()
+                    Button {
+                        NSApplication.shared.terminate(nil)
+                    } label: {
+                        Image(systemName: "power")
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundStyle(AppTheme.muted)
+                    }
+                    .buttonStyle(.plain)
+                    .help(String(localized: "menu.quit"))
+                }
                 Text("menu.tagline")
                     .font(.system(size: 13, weight: .medium, design: .rounded))
                     .foregroundStyle(AppTheme.muted)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
 
             Picker("", selection: $selectedSection) {
                 ForEach(MenuSection.allCases) { section in
@@ -109,6 +120,7 @@ struct MenuBarView: View {
                     .frame(maxWidth: .infinity,alignment: .topLeading)
                     .padding(20)
                 }
+                .id(section)
             }
         }
         .paperPanel()

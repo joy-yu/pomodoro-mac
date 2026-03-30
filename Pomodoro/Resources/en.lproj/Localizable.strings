@@ -25,6 +25,7 @@
 
 /* Menu */
 "menu.tagline" = "Make focus a fun thing";
+"menu.quit" = "Quit Pomodoro";
 "menu.focus" = "Focus";
 "menu.stats" = "Stats";
 "menu.tags" = "Tags";
