@@ -68,10 +68,8 @@ struct TagEditorSheet: View {
                     Spacer()
                     Button { onDismiss() } label: {
                         Image(systemName: "xmark")
-                            .font(.system(size: 11, weight: .bold))
+                            .font(.system(size: 16))
                             .foregroundStyle(AppTheme.muted)
-                            .frame(width: 26, height: 26)
-                            .background(AppTheme.ring)
                             .clipShape(Circle())
                     }
                     .buttonStyle(.plain)

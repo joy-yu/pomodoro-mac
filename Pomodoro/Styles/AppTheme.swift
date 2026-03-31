@@ -31,14 +31,14 @@ enum AppTheme {
     static let phaseLongBreakHigh  = Color(hex: "#6AA898")
 
     enum TagPalette {
+        static let focusHex = AppTheme.paperShadowHex
+        static let reviewHex = "#8B5A46"
         static let writingHex = AppTheme.tomatoHex
+        static let readingHex = "#3F6C63"
         static let designHex = "#A66C3D"
         static let codingHex = "#6B4E3D"
-        static let readingHex = "#3F6C63"
-        static let reviewHex = "#8B5A46"
-        static let planningHex = AppTheme.oliveHex
 
-        static let hexValues = [writingHex, designHex, codingHex, readingHex, reviewHex, planningHex]
+        static let hexValues = [focusHex, reviewHex, writingHex, readingHex, designHex, codingHex]
     }
 
     static func tagColor(for hex: String) -> Color {
