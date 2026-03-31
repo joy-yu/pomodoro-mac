@@ -49,10 +49,22 @@ struct PomodoroApp: App {
             .frame(width: 400, height: 640)
             .modelContainer(store.container)
             .colorScheme(.light)
+            .background(NormalWindowLevel())
         } label: {
             Label("\(engine.menuBarTitle)", systemImage: engine.currentPhase.symbolName)
                 .labelStyle(.titleAndIcon)
         }
         .menuBarExtraStyle(.window)
     }
+}
+
+private struct NormalWindowLevel: NSViewRepresentable {
+    func makeNSView(context: Context) -> NSView {
+        let view = NSView()
+        DispatchQueue.main.async {
+            view.window?.level = .floating
+        }
+        return view
+    }
+    func updateNSView(_ nsView: NSView, context: Context) {}
 }

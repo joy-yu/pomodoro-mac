@@ -13,6 +13,7 @@
 
 /* Settings */
 "settings.timing" = "Timing";
+"settings.focusDuration" = "Focus Duration";
 "settings.shortBreak" = "Short Break";
 "settings.longBreak" = "Long Break";
 "settings.longBreakInterval" = "Long Break Interval";

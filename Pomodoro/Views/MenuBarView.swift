@@ -64,7 +64,10 @@ struct MenuBarView: View {
             sectionShell(for: selectedSection) {
                 switch selectedSection {
                 case .focus:
-                    FocusView(engine: engine)
+                    FocusView(engine: engine, store: store, onNewTag: {
+                        selectedSection = .tags
+                        presentTagCreate()
+                    })
                 case .stats:
                     StatsView(store: store)
                 case .tags:

@@ -13,6 +13,7 @@
 
 /* Settings */
 "settings.timing" = "タイマー";
+"settings.focusDuration" = "集中時間";
 "settings.shortBreak" = "短い休憩";
 "settings.longBreak" = "長い休憩";
 "settings.longBreakInterval" = "長い休憩間隔";

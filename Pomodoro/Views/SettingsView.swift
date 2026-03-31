@@ -10,6 +10,13 @@ struct SettingsView: View {
 
             Section("settings.timing") {
                 HStack(alignment: .center) {
+                    row(title: String(localized: "settings.focusDuration"),
+                        value: "\(settings.focusDurationMinutes) \(String(localized: "unit.min"))")
+                    Stepper("", value: $settings.focusDurationMinutes, in: 10...90, step: 5)
+                        .labelsHidden()
+                }
+
+                HStack(alignment: .center) {
                     row(title: String(localized: "settings.shortBreak"),
                         value: "\(settings.shortBreakMinutes) \(String(localized: "unit.min"))")
                     Stepper("", value: $settings.shortBreakMinutes, in: 3...30, step: 1)

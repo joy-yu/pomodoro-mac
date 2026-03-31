@@ -28,7 +28,6 @@ struct TagManagementView: View {
                     } label: {
                         tagRow(
                             title: tag.name,
-                            detail: "\(tag.focusDurationMinutes) \(String(localized: "unit.min"))",
                             color: AppTheme.tagColor(for: tag.colorHex),
                             isSelected: selectedTag?.id == tag.id
                         )
@@ -69,7 +68,7 @@ struct TagManagementView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
     }
 
-    private func tagRow(title: String, detail: String, color: Color, isSelected: Bool) -> some View {
+    private func tagRow(title: String, color: Color, isSelected: Bool) -> some View {
         HStack(spacing: 12) {
             Circle()
                 .fill(color)
@@ -82,21 +81,12 @@ struct TagManagementView: View {
                     }
                 }
 
-            HStack(spacing: 12) {
-                Text(title)
-                    .font(.system(size: 14, weight: .semibold, design: .rounded))
-                    .foregroundStyle(AppTheme.ink)
-
-                Spacer(minLength: 12)
-
-                Text(detail)
-            }
-            .font(.system(size: 11, weight: .medium, design: .rounded))
-            .foregroundStyle(AppTheme.muted)
+            Text(title)
+                .font(.system(size: 14, weight: .semibold, design: .rounded))
+                .foregroundStyle(AppTheme.ink)
 
             Spacer(minLength: 0)
 
-            // reserved space for the ellipsis menu button
             Color.clear.frame(width: 24)
         }
         .padding(.horizontal, 14)

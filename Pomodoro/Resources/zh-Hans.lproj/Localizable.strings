@@ -13,6 +13,7 @@
 
 /* Settings */
 "settings.timing" = "计时";
+"settings.focusDuration" = "专注时长";
 "settings.shortBreak" = "短休息";
 "settings.longBreak" = "长休息";
 "settings.longBreakInterval" = "长休息间隔";

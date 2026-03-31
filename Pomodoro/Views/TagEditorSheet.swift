@@ -32,7 +32,6 @@ struct TagEditorSheet: View {
 
     @State private var name: String
     @State private var colorHex: String
-    @State private var focusDuration: Int
 
     private let colors = AppTheme.TagPalette.hexValues
 
@@ -45,11 +44,9 @@ struct TagEditorSheet: View {
         case .create:
             _name = State(initialValue: "")
             _colorHex = State(initialValue: AppTheme.TagPalette.hexValues.first ?? AppTheme.TagPalette.writingHex)
-            _focusDuration = State(initialValue: 25)
         case .edit(let tag):
             _name = State(initialValue: tag.name)
             _colorHex = State(initialValue: tag.colorHex)
-            _focusDuration = State(initialValue: tag.focusDurationMinutes)
         }
     }
 
@@ -103,16 +100,6 @@ struct TagEditorSheet: View {
                     }
                 }
 
-                Stepper(value: $focusDuration, in: 10...90, step: 5) {
-                    HStack {
-                        Text("tags.focusDuration")
-                        Spacer()
-                        Text("\(focusDuration) \(String(localized: "unit.min"))")
-                            .foregroundStyle(AppTheme.muted)
-                    }
-                    .font(.system(size: 13, weight: .medium, design: .rounded))
-                }
-
                 HStack(spacing: 10) {
                     Button("tags.cancel") { onDismiss() }
                         .buttonStyle(.bordered)
@@ -140,9 +127,9 @@ struct TagEditorSheet: View {
     private func submit() {
         switch mode {
         case .create:
-            store.createTag(name: name, colorHex: colorHex, focusDurationMinutes: focusDuration)
+            store.createTag(name: name, colorHex: colorHex)
         case .edit(let tag):
-            store.updateTag(tag, name: name, colorHex: colorHex, focusDurationMinutes: focusDuration)
+            store.updateTag(tag, name: name, colorHex: colorHex)
         }
         onDismiss()
     }

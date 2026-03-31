@@ -25,6 +25,9 @@ final class AppSettings {
     var floatingPanelVisible: Bool {
         didSet { defaults.set(floatingPanelVisible, forKey: Keys.floatingPanelVisible) }
     }
+    var focusDurationMinutes: Int {
+        didSet { defaults.set(focusDurationMinutes, forKey: Keys.focusDurationMinutes) }
+    }
     var selectedTagID: UUID? {
         didSet {
             if let selectedTagID {
@@ -53,6 +56,7 @@ final class AppSettings {
         notificationsEnabled = defaults.object(forKey: Keys.notificationsEnabled) as? Bool ?? true
         soundEnabled = defaults.object(forKey: Keys.soundEnabled) as? Bool ?? true
         floatingPanelVisible = defaults.object(forKey: Keys.floatingPanelVisible) as? Bool ?? false
+        focusDurationMinutes = defaults.integer(forKey: Keys.focusDurationMinutes).nonZero(or: 25)
         selectedTagID = defaults.string(forKey: Keys.selectedTagID).flatMap(UUID.init(uuidString:))
         appLanguage = defaults.string(forKey: Keys.appLanguage) ?? ""
     }
@@ -80,6 +84,7 @@ private enum Keys {
     static let notificationsEnabled = "settings.notificationsEnabled"
     static let soundEnabled = "settings.soundEnabled"
     static let floatingPanelVisible = "settings.floatingPanelVisible"
+    static let focusDurationMinutes = "settings.focusDurationMinutes"
     static let selectedTagID = "settings.selectedTagID"
     static let appLanguage = "settings.appLanguage"
 }

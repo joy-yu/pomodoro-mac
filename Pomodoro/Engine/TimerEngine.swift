@@ -69,7 +69,7 @@ final class TimerEngine {
     }
 
     var effectiveFocusDurationMinutes: Int {
-        selectedTag?.focusDurationMinutes ?? 25
+        settings.focusDurationMinutes
     }
 
     var cycleStageCount: Int {
@@ -139,6 +139,11 @@ final class TimerEngine {
         if state == .idle {
             remainingSeconds = duration(for: currentPhase)
         }
+    }
+
+    func setFocusDuration(_ minutes: Int) {
+        settings.focusDurationMinutes = minutes
+        applySettings()
     }
 
     func selectTag(_ tag: Tag?) {
@@ -231,7 +236,7 @@ final class TimerEngine {
     private func duration(for phase: PomodoroPhase) -> Int {
         switch phase {
         case .work:
-            return (selectedTag?.focusDurationMinutes ?? 25) * 60
+            return settings.focusDurationMinutes * 60
         case .shortBreak:
             return settings.shortBreakMinutes * 60
         case .longBreak:

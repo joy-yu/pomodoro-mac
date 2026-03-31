@@ -79,7 +79,7 @@ final class PomodoroStore {
         let tags = (try? context.fetch(descriptor)) ?? []
         return tags.sorted {
             if $0.isDefault != $1.isDefault { return $0.isDefault }
-            return $0.focusDurationMinutes < $1.focusDurationMinutes
+            return $0.name < $1.name
         }
     }
 
@@ -95,19 +95,18 @@ final class PomodoroStore {
         return (try? context.fetch(descriptor)) ?? []
     }
 
-    func createTag(name: String, colorHex: String, focusDurationMinutes: Int) {
+    func createTag(name: String, colorHex: String) {
         let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmedName.isEmpty else { return }
-        context.insert(Tag(name: trimmedName, colorHex: colorHex, focusDurationMinutes: focusDurationMinutes))
+        context.insert(Tag(name: trimmedName, colorHex: colorHex, focusDurationMinutes: 25))
         save()
     }
 
-    func updateTag(_ tag: Tag, name: String, colorHex: String, focusDurationMinutes: Int) {
+    func updateTag(_ tag: Tag, name: String, colorHex: String) {
         let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmedName.isEmpty else { return }
         tag.name = trimmedName
         tag.colorHex = colorHex
-        tag.focusDurationMinutes = focusDurationMinutes
         save()
     }
 
