@@ -10,7 +10,7 @@ Native macOS menu bar Pomodoro app — SwiftUI + SwiftData + AppKit + Swift Char
 - UserNotifications for phase alerts
 - XcodeGen — `project.yml` is the canonical project definition
 
-Deployment target: macOS 14. No third-party dependencies.
+Deployment target: macOS 14. Use third-party dependencies only when necessary.
 
 ## Repository Layout
 
@@ -45,6 +45,6 @@ xcodegen generate   # required after adding/removing files or editing project.ym
 6. All colors and animations must go through `AppTheme` — no inline literals.
 7. Color usage must always target the light color scheme. The app enforces `.colorScheme(.light)` globally; do not add adaptive/dark-mode color logic. Dark theme support is deferred to a future milestone.
 8. Keep changes focused; do not refactor code outside the task scope.
-8. Read `doc/architecture.md` and relevant view files before making non-trivial changes.
-9. Keep documentation in sync: update `doc/` whenever features change or requirements evolve — file responsibilities, architecture flows, and coding patterns must reflect the current state of the code.
-10. Any user-facing text change must be applied to all four `Localizable.strings` files. Never hardcode display strings in Swift — use `String(localized:)` or `LocalizedStringKey` and add the corresponding keys to every locale file. Keep translations concise: prefer the shortest phrasing that still preserves precise semantic meaning, especially for UI labels where space is constrained.
+9. Read `doc/architecture.md` and relevant view files before making non-trivial changes.
+10. Keep documentation in sync: update `doc/` whenever features change or requirements evolve — file responsibilities, architecture flows, and coding patterns must reflect the current state of the code.
+11. Any user-facing text change must be applied to all four `Localizable.strings` files. Never hardcode display strings in Swift — use `String(localized:)` or `LocalizedStringKey` and add the corresponding keys to every locale file. Keep translations concise: prefer the shortest phrasing that still preserves precise semantic meaning, especially for UI labels where space is constrained.
