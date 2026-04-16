@@ -10,6 +10,12 @@ PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 PROJECT_PATH="$PROJECT_ROOT/$SCHEME.xcodeproj"
 ARCHIVE_PATH="$PROJECT_ROOT/dist/$SCHEME.xcarchive"
 
+# ── Warn if project.yml is newer than the generated .xcodeproj ──────────────
+if [[ "$PROJECT_ROOT/project.yml" -nt "$PROJECT_PATH/project.pbxproj" ]]; then
+    echo "⚠️  project.yml is newer than .xcodeproj — running xcodegen generate..." >&2
+    xcodegen generate --spec "$PROJECT_ROOT/project.yml" --project "$PROJECT_ROOT"
+fi
+
 echo "==> Cleaning dist/"
 rm -rf "$PROJECT_ROOT/dist"
 mkdir -p "$PROJECT_ROOT/dist"

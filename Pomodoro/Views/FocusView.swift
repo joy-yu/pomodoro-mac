@@ -155,6 +155,7 @@ private struct DurationPickerPopover: View {
                             Text("\(minutes) \(String(localized: "unit.min"))")
                                 .font(.system(size: 13, weight: isSelected ? .semibold : .regular, design: .rounded))
                                 .foregroundStyle(AppTheme.ink)
+                                .fixedSize()
                             Spacer()
                             if isSelected {
                                 Image(systemName: "checkmark")
@@ -176,6 +177,8 @@ private struct DurationPickerPopover: View {
             .padding(8)
         }
         .frame(width: 120, height: min(CGFloat(Self.durations.count) * 34 + 16, 280))
+        .background(AppTheme.paper)
+        .colorScheme(.light)
     }
 }
 
@@ -253,5 +256,7 @@ private struct TagPickerPopover: View {
         }
         .padding(8)
         .frame(minWidth: 180)
+        .background(AppTheme.paper)
+        .colorScheme(.light)
     }
 }

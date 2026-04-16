@@ -173,6 +173,34 @@ static let v2ToV3 = MigrationStage.custom(
 3. Append the new version to `AppMigrationPlan.schemas` and `stages`
 4. Update `PomodoroStore`'s `ModelContainer` init to pass `migrationPlan:` (one-time change; subsequent schema bumps only touch `AppMigrationPlan`)
 
+## Light Color Scheme Enforcement
+
+The app enforces `.colorScheme(.light)` globally (see `PomodoroApp`). However, macOS popovers are rendered in a separate `NSWindow` backed by `NSVisualEffectView` — they **do not inherit** the parent view's color scheme and will adopt the system dark appearance on dark-mode systems.
+
+**Two-step rule for every popover, sheet, or fullScreenCover:**
+
+1. Apply `.background(AppTheme.paper)` to the content root — this opaque background covers the system's dark blur material.
+2. Apply `.colorScheme(.light)` after the background — this ensures SwiftUI renders all child views in light mode.
+
+Both modifiers belong **inside** the `.popover { }` closure, on the root content view:
+
+```swift
+// Correct
+.popover(isPresented: $showPicker, arrowEdge: .bottom) {
+    MyPickerView(...)
+        .background(AppTheme.paper)   // covers dark NSVisualEffectView
+        .colorScheme(.light)          // forces SwiftUI light rendering
+}
+
+// Wrong — .colorScheme alone doesn't cover the system blur background
+.popover(isPresented: $showPicker, arrowEdge: .bottom) {
+    MyPickerView(...)
+        .colorScheme(.light)
+}
+```
+
+Note: placing either modifier on the *button* or *outside* the `.popover` closure has no effect on the popover window.
+
 ## FloatingPanelManager.configure
 
 `configure(engine:settings:)` must be called once before any `updateVisibility` call. Subsequent `show()` / `hide()` calls require no parameters — the manager holds the references internally.

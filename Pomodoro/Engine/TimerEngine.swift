@@ -205,10 +205,12 @@ final class TimerEngine {
         timer?.invalidate()
         let finishedPhase = currentPhase
 
-        if finishedPhase == .work, !triggeredBySkip {
-            let endTime = Date.now
-            let startTime = endTime.addingTimeInterval(-Double(duration(for: finishedPhase)))
-            store.saveCompletedSession(startTime: startTime, endTime: endTime, phase: .work, tag: selectedTag)
+        if finishedPhase == .work {
+            if !triggeredBySkip {
+                let endTime = Date.now
+                let startTime = endTime.addingTimeInterval(-Double(duration(for: finishedPhase)))
+                store.saveCompletedSession(startTime: startTime, endTime: endTime, phase: .work, tag: selectedTag)
+            }
             completedPomodoros += 1
         }
 
